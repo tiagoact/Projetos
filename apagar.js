@@ -4,7 +4,7 @@ deleteAllInDir("./downloads/temp").then(() => {
   console.log("Removed all files from the specified directory");
 });
 
-async function deleteAllInDir(dirPath: string) {
+async function deleteAllInDir(dirPath) {
   try {
     await fs.rm(dirPath, { recursive: true });
 
